@@ -1,7 +1,8 @@
 <div class="productName"><%= @product.name %></div>
 <a href="#" class="js-next" data-id="<%=@product.id%>">Next Product</a>
-<h1 class="postTitle"><%= @post.title %></h1>
-<p class="postBody"><%= @post.description %></p>
+<h1 class="productPrice"><%= @product.price %></h1>
+<h1 class="productInventory"><%= @product.inventory %></h1>
+<p class="postBody"><%= @product.description %></p>
 
 <script type="text/javascript" charset="utf-8">
 $(function () {
