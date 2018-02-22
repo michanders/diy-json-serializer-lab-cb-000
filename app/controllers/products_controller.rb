@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
-  def ata
+  def data
     product = Product.find(params[:id])
     render json: ProductSerializer.serialize(product)
   end
@@ -21,6 +21,9 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
   end
+
+  def show
+    @product = Product.find(params[:id])
 
   def create
     Product.create(product_params)
