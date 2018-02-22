@@ -24,6 +24,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+  end
 
   def create
     Product.create(product_params)
