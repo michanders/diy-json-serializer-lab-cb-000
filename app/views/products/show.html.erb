@@ -7,7 +7,6 @@ $(function () {
       $(".productPrice").text(data["price"]);
       $(".productinventory").text(data["inventory"]);
       $(".productBody").text(data["description"]);
-      // re-set the id to current on the link
       $(".js-next").attr("data-id", data["id"]);
     });
   });
